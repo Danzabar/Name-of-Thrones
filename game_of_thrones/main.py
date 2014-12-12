@@ -13,7 +13,7 @@ Options:
   --min=<length>           the minimum length of each word [default: 4].
   --max=<length>           the maximum length of each word [default: 10].
   -j, --json               output the words in JSON format.
-  -n, --nocolour           output the words without colourization
+  -n, --nocolour           output the words without colourization.
 """
 import json
 from itertools import islice

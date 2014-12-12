@@ -43,7 +43,7 @@ You can use the `name-of-thrones` command from the shell to run Name of Thrones:
     Generate words that sound like characters from Game of Thrones.
 
     Usage:
-      name-of-thrones [--quantity=<number>] [--min=<length>] [--max=<length>] [--json]
+      name-of-thrones [--quantity=<number>] [--min=<length>] [--max=<length>] [--json] [--nocolour]
       name-of-thrones (-h | --help | --version)
 
     Options:
@@ -52,7 +52,8 @@ You can use the `name-of-thrones` command from the shell to run Name of Thrones:
       -q, --quantity=<number>  the quantity of words to generate [default: 10].
       --min=<length>           the minimum length of each word [default: 4].
       --max=<length>           the maximum length of each word [default: 10].
-      -j, --json               output the names in JSON format.
+      -j, --json               output the words in JSON format.
+      -n, --nocolour           output the words without colourization.
 
 License
 -------
