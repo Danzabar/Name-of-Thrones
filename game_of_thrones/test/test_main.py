@@ -1,7 +1,8 @@
-from game_of_thrones import MarkovChain
-from itertools import islice
-import unittest
 import string
+import unittest
+from itertools import islice
+
+from game_of_thrones import MarkovChain
 
 # Python 3
 try:
