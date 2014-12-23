@@ -20,7 +20,6 @@ from itertools import islice
 
 from colorama import Fore, init, Style
 from docopt import docopt
-
 from game_of_thrones import __version__, MarkovChain
 
 

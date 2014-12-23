@@ -1,5 +1,5 @@
-from setuptools import setup
 import game_of_thrones
+from setuptools import setup
 
 setup(
     name='name-of-thrones',
