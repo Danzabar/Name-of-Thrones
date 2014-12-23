@@ -23,7 +23,7 @@ Name of Thrones
 Command line tool to generate words that sound like characters from Game of Thrones. Useful for
 unique project names, host names and the occasional stray cat.
 
-.. image:: https://raw.githubusercontent.com/Matt-Deacalion/Name-of-Thrones/screenshots/screenshot.jpg
+.. image:: https://raw.githubusercontent.com/Matt-Deacalion/Name-of-Thrones/screenshots/screenshot.png
     :alt: Name of Thrones screenshot
 
 Installation
@@ -43,7 +43,8 @@ You can use the `name-of-thrones` command from the shell to run Name of Thrones:
     Generate words that sound like characters from Game of Thrones.
 
     Usage:
-      name-of-thrones [--quantity=<number>] [--min=<length>] [--max=<length>] [--json] [--nocolour]
+      name-of-thrones [--quantity=<number>] [--min=<length>] [--max=<length>]
+                      [--json] [--nocolour] [--alphabetical] [--length] [--reverse]
       name-of-thrones (-h | --help | --version)
 
     Options:
@@ -54,10 +55,13 @@ You can use the `name-of-thrones` command from the shell to run Name of Thrones:
       --max=<length>           the maximum length of each word [default: 10].
       -j, --json               output the words in JSON format.
       -n, --nocolour           output the words without colourization.
+      -a, --alphabetical       output the words in alphabetical order.
+      -l, --length             output the words in order of their length.
+      -r, --reverse            reverse the order of the words.
 
 License
 -------
-Copyright © 2014 `Matt Deacalion Stevens`_, released under The `MIT License`_.
+Copyright © 2015 `Matt Deacalion Stevens`_, released under The `MIT License`_.
 
 .. _Matt Deacalion Stevens: http://dirtymonkey.co.uk
 .. _MIT License: http://deacalion.mit-license.org
