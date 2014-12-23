@@ -3,7 +3,8 @@
 """Generate words that sound like characters from Game of Thrones.
 
 Usage:
-  name-of-thrones [--quantity=<number>] [--min=<length>] [--max=<length>] [--json] [--nocolour]
+  name-of-thrones [--quantity=<number>] [--min=<length>] [--max=<length>]
+                  [--json] [--nocolour] [--alphabetical] [--length] [--reverse]
   name-of-thrones (-h | --help | --version)
 
 Options:
@@ -14,13 +15,17 @@ Options:
   --max=<length>           the maximum length of each word [default: 10].
   -j, --json               output the words in JSON format.
   -n, --nocolour           output the words without colourization.
+  -a, --alphabetical       output the words in alphabetical order.
+  -l, --length             output the words in order of their length.
+  -r, --reverse            reverse the order of the words.
 """
 import json
 from itertools import islice
 
 from colorama import Fore, init, Style
 from docopt import docopt
-from game_of_thrones import __version__, MarkovChain
+
+from game_of_thrones import __version__, MarkovChain, sort_words
 
 
 def main():
@@ -33,14 +38,16 @@ def main():
         max_length=int(arguments['--max']),
     )
 
+    words = sort_words(arguments, list(islice(chain.unique_word(), quantity)))
+
     if arguments['--json']:
         output = {'quantity': quantity}
-        output['names'] = list(islice(chain.unique_word(), quantity))
+        output['names'] = words
         print(json.dumps(output))
     else:
         init(autoreset=True)
 
-        for i, word in enumerate(chain.unique_word()):
+        for i, word in enumerate(words):
             if i == quantity:
                 break
 

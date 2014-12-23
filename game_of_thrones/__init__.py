@@ -130,3 +130,19 @@ class MarkovChain:
             if word not in self.unique_words:
                 self.unique_words.add(word)
                 yield word
+
+
+def sort_words(arguments, words):
+    """
+    Takes a dict of command line arguments and a list of words to be sorted.
+    Returns a sorted list based on `alphabetical`, `length` and `reverse`.
+    """
+    if arguments.get('--alphabetical', False):
+        words.sort()
+    elif arguments.get('--length', False):
+        words.sort(key=len)
+
+    if arguments.get('--reverse', False):
+        words.reverse()
+
+    return words

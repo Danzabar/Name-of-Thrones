@@ -2,7 +2,7 @@ import string
 import unittest
 from itertools import islice
 
-from game_of_thrones import MarkovChain
+from game_of_thrones import MarkovChain, sort_words
 
 # Python 3
 try:
@@ -195,3 +195,42 @@ class MarkovChainTest(unittest.TestCase):
         mock_get_weighted_letter.side_effect = iter(generated[1:])
 
         self.assertEqual(next(mc.word()), expected_output)
+
+
+class SortingTest(unittest.TestCase):
+
+    def setUp(self):
+        self.words = ['xaro', 'viserys', 'hodor', 'marillion', 'tyrion']
+
+    def test_no_sorting(self):
+        self.assertEqual(sort_words({}, self.words), self.words)
+
+    def test_reverse(self):
+        self.assertEqual(
+            sort_words({'--reverse': True}, self.words),
+            ['tyrion', 'marillion', 'hodor', 'viserys', 'xaro'],
+        )
+
+    def test_alpha_sorting(self):
+        self.assertEqual(
+            sort_words({'--alphabetical': True}, self.words),
+            ['hodor', 'marillion', 'tyrion', 'viserys', 'xaro'],
+        )
+
+    def test_length_sorting(self):
+        self.assertEqual(
+            sort_words({'--length': True}, self.words),
+            ['xaro', 'hodor', 'tyrion', 'viserys', 'marillion'],
+        )
+
+    def test_reverse_alpha(self):
+        self.assertEqual(
+            sort_words({'--alphabetical': True, '--reverse': True}, self.words),
+            ['xaro', 'viserys', 'tyrion', 'marillion', 'hodor'],
+        )
+
+    def test_reverse_length(self):
+        self.assertEqual(
+            sort_words({'--length': True, '--reverse': True}, self.words),
+            ['marillion', 'viserys', 'tyrion', 'hodor', 'xaro'],
+        )
