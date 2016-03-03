@@ -1,22 +1,22 @@
 ===============
 Name of Thrones
 ===============
-.. image:: https://travis-ci.org/Matt-Deacalion/Name-of-Thrones.svg?branch=master
+.. image:: https://img.shields.io/travis/Matt-Deacalion/Name-of-Thrones.svg
     :target: https://travis-ci.org/Matt-Deacalion/Name-of-Thrones
     :alt: Build Status
-.. image:: https://coveralls.io/repos/Matt-Deacalion/Name-of-Thrones/badge.png?branch=master
+.. image:: https://img.shields.io/coveralls/Matt-Deacalion/Name-of-Thrones.svg
     :target: https://coveralls.io/r/Matt-Deacalion/Name-of-Thrones?branch=master
     :alt: Test Coverage
-.. image:: https://pypip.in/download/name-of-thrones/badge.png?period=week
+.. image:: https://img.shields.io/pypi/dw/name-of-thrones.svg
     :target: https://pypi.python.org/pypi/name-of-thrones/
     :alt: Downloads
-.. image:: https://pypip.in/version/name-of-thrones/badge.png
+.. image:: https://img.shields.io/pypi/v/name-of-thrones.svg
     :target: https://pypi.python.org/pypi/name-of-thrones/
     :alt: Latest Version
-.. image:: https://pypip.in/wheel/name-of-thrones/badge.png?new
+.. image:: https://img.shields.io/pypi/wheel/name-of-thrones.svg
     :target: https://pypi.python.org/pypi/name-of-thrones/
     :alt: Wheel Status
-.. image:: https://pypip.in/license/name-of-thrones/badge.png
+.. image:: https://img.shields.io/github/license/name-of-thones/apistatus.svg
     :target: https://pypi.python.org/pypi/name-of-thrones/
     :alt: License
 
