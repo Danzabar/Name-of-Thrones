@@ -1,25 +1,6 @@
 ===============
 Name of Thrones
 ===============
-.. image:: https://img.shields.io/travis/Matt-Deacalion/Name-of-Thrones.svg
-    :target: https://travis-ci.org/Matt-Deacalion/Name-of-Thrones
-    :alt: Build Status
-.. image:: https://img.shields.io/coveralls/Matt-Deacalion/Name-of-Thrones.svg
-    :target: https://coveralls.io/r/Matt-Deacalion/Name-of-Thrones?branch=master
-    :alt: Test Coverage
-.. image:: https://img.shields.io/pypi/dw/name-of-thrones.svg
-    :target: https://pypi.python.org/pypi/name-of-thrones/
-    :alt: Downloads
-.. image:: https://img.shields.io/pypi/v/name-of-thrones.svg
-    :target: https://pypi.python.org/pypi/name-of-thrones/
-    :alt: Latest Version
-.. image:: https://img.shields.io/pypi/wheel/name-of-thrones.svg
-    :target: https://pypi.python.org/pypi/name-of-thrones/
-    :alt: Wheel Status
-.. image:: https://img.shields.io/github/license/name-of-thones/apistatus.svg
-    :target: https://pypi.python.org/pypi/name-of-thrones/
-    :alt: License
-
 Command line tool to generate words that sound like characters from Game of Thrones. Useful for
 unique project names, host names and the occasional stray cat.
 
