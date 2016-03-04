@@ -4,7 +4,7 @@ Name of Thrones
 Command line tool to generate words that sound like characters from Game of Thrones. Useful for
 unique project names, host names and the occasional stray cat.
 
-.. image:: https://raw.githubusercontent.com/Matt-Deacalion/Name-of-Thrones/screenshots/screenshot.png
+.. image:: https://raw.githubusercontent.com/Matt-Deacalion/Name-of-Thrones/master/screenshot.png
     :alt: Name of Thrones screenshot
 
 Installation
